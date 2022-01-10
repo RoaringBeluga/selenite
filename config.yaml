@@ -1,0 +1,30 @@
+---
+configData:
+  browser: "firefox"
+  headless: false
+  headless-screensize: "1920x1080"
+  screenshot-dir: "log/screenshots"
+  wait-timeout: 120
+  wait-polling: 500
+  chrome:
+  - "--start-maximized"
+  - "--no-sandbox"
+  - "--disable-site-isolation-trials"
+  - "--auto-open-devtools-for-tabs"
+  edge:
+  - "--start-maximized"
+  - "--no-sandbox"
+  - "--disable-site-isolation-trials"
+  - "--auto-open-devtools-for-tabs"
+  firefox:
+  - "--devtools"
+  - "--new-instance"
+keysAllowed:
+- "chrome"
+- "edge"
+- "firefox"
+- "browser"
+- "headless"
+- "screenshot-dir"
+- "wait-timeout"
+- "wait-polling"
